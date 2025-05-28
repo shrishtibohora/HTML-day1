@@ -1,0 +1,58 @@
+*
+{
+    margin: 0;
+}
+
+.nav{
+    height: 3rem;
+    background-color:brown;
+}
+.navigation a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.navigation{
+    padding-top: 2vh;
+    text-align: right;
+}
+.navigation a{
+    padding-left: 1vh;
+    text-decoration: none;
+}
+/*main section*/
+.main{
+}
+.one{
+    color: aliceblue;
+    background-color: blue;
+    text-align: center;
+}
+.two{
+    
+    text-align: center;
+    color: red;
+    background-color: black;
+
+
+}
+.three{
+    text-align: center;
+    color: black;
+    background-color: red;
+}
+.four{
+    background-color: yellow;
+}
+.five{
+    background-color: green;
+} .five img{
+   
+    width:30vw ;
+    border-radius: 50%;
+    border: 8px crimson;
+}
+.footer{
+   height: 3rem; 
+   background-color: blue;
+}
