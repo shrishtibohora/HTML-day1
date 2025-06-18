@@ -1,36 +1,104 @@
 *
 {
+    padding: 0;
     margin: 0;
 }
+/* nav section*/
 nav{
     display: flex;
-    background-color:white;
-    color: black;
+    background-color:bisque;
     justify-content: space-between;
+    padding-top: 1vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    padding-bottom: 1vh;
 }
-nav ul a{
+.logo a{
+    display: flex;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+.logo1{
+list-style: none;
+    display: flex;
+}
+.logo1 a{
     text-decoration: none;
     color: black;
 }
-.start{
-    margin-top: 100px;
-    margin-right: 50px;
+.logo1 li {
+padding: 1rem;
 }
-.title{
-    font-size: 50px;
-    margin-top: 100px;
-    margin-right: 50px;
+*/main section*/
+.intro{
+background-color:green;
+color: blue;
+display: flex;
+padding: 3px;
+margin-top: 4px;
+margin: left 3px; 
+cursor: pointer;
 }
-.page{
-    background-color: coral;
+.intro2 img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid brown;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+intro1 a button{
+    color: pink
+    background-color: black;
+    padding: 3px;
+}
+.intro1 a button:hover{
+    color: pink;
+    transform: scale(1.1);
+}
+.intro1 h1{
+    color: black;
+    background-color: pink;
+    text-align: center;
+}
+.intro1 p{
+    color: blue;
+    background-color: yellow;
+    text-align: center;
+}
+/*main to about section*/
+.About{
+    background-color: brown;
     color: white;
-
+    margin-top: 3vh;
+    text-align: center;
+    padding: 3vh;
 }
-.title span{
-    color: chocolate;
+/* Education section*/
+.Education{
+     margin-top: 2vh;
+     background-color: aqua;
+     display: flex;
+     padding: 4vh;
 }
-.page a{
-    text-decoration: none;
+.Education h2{
+    text-align: center;
 }
-
+.Education div{
+    padding-left: 5vh;
+}
+.Education div legend button{
+    color: firebrick;
+    background-color: black;
+    border-radius: 5px;
+    padding: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Contact{
+    margin: 3vh;
+    padding: 2vh;
+    background-color: red;
+}
 
