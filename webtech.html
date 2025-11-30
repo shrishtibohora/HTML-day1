@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Butwal Kalika Campus - Student Form</title>
+</head>
+<body>
+
+<h2>Butwal Kalika Campus - Student Registration Form</h2>
+
+<form action="submit.php" method="post">
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required maxlength="50">
+        <br><br>
+
+        <label for="address">Address:</label>
+        <input list="citylist" id="address" name="address" placeholder="Choose or type city" required>
+        <datalist id="citylist">
+            <option value="Butwal"></option>
+            <option value="Tilottama"></option>
+            <option value="Manigram"></option>
+            <option value="Kalikanagar"></option>
+        </datalist>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="98XXXXXXXX" pattern="[0-9]{10}" required>
+        <br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Academic Details</legend>
+
+        <label for="program">Select Program:</label>
+        <select id="program" name="program" required>
+            <optgroup label="Bachelor Programs">
+                <option value="BCA">BCA</option>
+                <option value="BBS">BBS</option>
+                <option value="BA">BA</option>
+            </optgroup>
+            <optgroup label="Masters Programs">
+                <option value="MBS">MBS</option>
+                <option value="MEd">M.Ed</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label for="semester">Semester:</label>
+        <input type="number" id="semester" name="semester" min="1" max="8" required>
+        <br><br>
+
+        <label for="remarks">Remarks:</label><br>
+        <textarea id="remarks" name="remarks" rows="4" cols="40" placeholder="Write any remarks..."></textarea>
+        <br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Other Information</legend>
+
+        <label for="fees">Tuition Fee (In NPR):</label>
+        <input type="number" id="fees" name="fees" min="1000" max="200000" required
+               oninput="result.value = fees.value">
+        <br><br>
+
+        <label>Fee Output:</label>
+        <output name="result">0</output>
+        <br><br>
+    </fieldset>
+
+    <br>
+
+    <button type="submit">Submit Form</button>
+    <button type="reset">Reset</button>
+
+</form>
+
+</body>
+</html>
